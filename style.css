@@ -1,0 +1,36 @@
+#header{
+    text-align: center;
+}
+#main{
+    background-color: powderblue;
+   padding: 40px;
+   margin: 0 auto;
+   width: 700px;
+   border-radius: 18px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+#all-balance{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 8px;
+}
+#withdraw-deposit{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 8px;
+    
+}
+
+@media only screen and (max-width: 900px)  {
+    #all-balance,#withdraw-deposit{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 8px;
+    }
+}
